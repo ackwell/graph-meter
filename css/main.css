@@ -43,3 +43,9 @@ body {
 	font: 11px/20px 'Calibri';
 	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
 }
+
+.y-axis img {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
