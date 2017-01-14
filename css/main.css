@@ -39,13 +39,21 @@ body {
 	height: 20px;
 	margin-top: -10px;
 	background: #aaf;
-	color: #ccc;
-	font: 11px/20px 'Calibri';
-	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
+	font-size: 0;
+	white-space: nowrap;
 }
 
 .y-axis img {
+	display: inline-block;
 	width: 20px;
 	height: 20px;
-	vertical-align: middle;
+	vertical-align: bottom;
+}
+
+.y-axis .text {
+	display: inline-block;
+	margin-left: 5px;
+	color: #ccc;
+	font: 10px/10px 'Calibri';
+	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
 }
