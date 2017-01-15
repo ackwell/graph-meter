@@ -39,7 +39,6 @@ body {
 
 .y-axis .text {
 	display: inline-block;
-	margin-left: 5px;
 	color: #ccc;
 	font-family: 'Calibri';
 	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
