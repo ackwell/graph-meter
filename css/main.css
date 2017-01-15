@@ -12,14 +12,6 @@ body {
 	margin: 0;
 }
 
-.reload {
-	margin: 0;
-	background: blue;
-	color: white;
-	text-align: center;
-	line-height: 20px;
-}
-
 .container {
 	position: relative;
 	line-height: 0;
@@ -36,16 +28,12 @@ body {
 .y-axis .label {
 	position: absolute;
 	width: 100%;
-	height: 20px;
-	margin-bottom: -10px;
 	font-size: 0;
 	white-space: nowrap;
 }
 
 .y-axis img {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
 	vertical-align: bottom;
 }
 
@@ -53,6 +41,6 @@ body {
 	display: inline-block;
 	margin-left: 5px;
 	color: #ccc;
-	font: 10px/10px 'Calibri';
+	font-family: 'Calibri';
 	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
 }
