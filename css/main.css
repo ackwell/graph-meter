@@ -10,6 +10,20 @@ html {
 
 body {
 	margin: 0;
+	color: #ccc;
+	font-family: 'Calibri';
+	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabs, .stats li:hover {
+	color: #DED7BE;
+	text-shadow: -1px 0 2px #795516, 0 1px 2px #795516, 1px 0 2px #795516, 0 -1px 2px #795516;
 }
 
 .container {
@@ -39,7 +53,39 @@ body {
 
 .y-axis .text {
 	display: inline-block;
-	color: #ccc;
-	font-family: 'Calibri';
-	text-shadow: -1px 0 3px #4596ba, 0 1px 3px #4596ba, 1px 0 3px #4596ba, 0 -1px 3px #4596ba;
+}
+
+.controls {
+	font-size: 11px;
+}
+
+.tabs {
+	height: 20px;
+}
+
+.tabs li {
+	display: inline-block;
+	height: 100%;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.tabs li.active {
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.tab-content {
+	position: absolute;
+	top: 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+	background: rgba(0, 0, 0, 0.75);
+	overflow-y: auto;
+}
+
+.stats li {
+	cursor: pointer;
 }
