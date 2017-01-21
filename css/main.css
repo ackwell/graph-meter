@@ -1,3 +1,8 @@
+* {
+	/* Just looks dorky if you accidentally select something */
+	-webkit-user-select: none;
+}
+
 html {
 	background-image: url(../img/handle.png);
 	background-position: bottom right;
@@ -68,6 +73,9 @@ ul {
 	height: 100%;
 	line-height: 20px;
 	cursor: pointer;
+
+	/* Basically invisible, just need to put something there so it accepts clicks */
+	background: rgba(0, 0, 0, 0.01);
 }
 
 .tabs li.active {
