@@ -34,6 +34,16 @@ To configure the overlay, open `config.js` in the same folder as the `index.html
 
 As mentioned in `config.js`, further config can be achieved by editing files in `lib/` such as `lib/palette.js`, but you'll want a half-decent understanting of JavaScript before diving in there.
 
+Todo
+---
+
+In no particular order:
+
+* [ ] Snazzy x-axis with timestamps and cool stuff!
+* [ ] Pet splitting/joining (do people actually use this?)
+* [ ] Better styling of controls, groupings for encounters and stats
+* [ ] Config editing without editing a bloody text file
+
 Reporting Bugs
 ---
 
