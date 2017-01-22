@@ -74,11 +74,31 @@
 <!-- TESTING: Script that generates test data a-la ACT -->
 <!-- <script src="lib/test.js"></script> -->
 
+<script src="config.js"></script>
 <script src="lib/data.js"></script>
 <script src="lib/palette.js"></script>
 <script src="lib/graph.js"></script>
 <script src="lib/axis.js"></script>
 <script src="lib/controls.js"></script>
-<script src="lib/main.js"></script>
+
+<script>
+// Set 'er all up
+window.data = new Data();
+window.palette = new Palette();
+
+data.switchStat(config.stat);
+
+function update(event) {
+	data.push(event.detail);
+}
+
+// Listen for incoming event
+document.addEventListener('onOverlayDataUpdate', update);
+document.addEventListener('message', function(event) {
+	if (event.data.type == 'onOverlayDataUpdate') {
+		update(event);
+	}
+});
+</script>
 </body>
 </html>
